@@ -1,4 +1,4 @@
-# Algorithmic Trading Strategy Optimization
+# Algorithmic Trading Optimization
 
 This repository contains a machine learning-based project focused on tuning a trading algorithm and comparing different models' performance. The goal of this project is to design a better trading algorithm and evaluate its performance.
 
@@ -48,13 +48,22 @@ After tuning, the set of parameters that best improved the trading algorithm ret
 ![Cumulative Returns Plot 2](./Resources/cumulative_returns_plot2.png)
 
 ### 3. Evaluate a New Machine Learning Classifier
-A new classifier, AdaBoost, DecisionTreeClassifier, or LogisticRegression will be used to fit the model. The performance of this new model will be backtested and compared with the baseline model.
 
-### 4. Create an Evaluation Report
-Finally, an evaluation report will be created summarizing the final conclusions and analysis. This report will be supported by the PNG images created throughout the project.
+In this task, we evaluated a new machine learning classifier, specifically the AdaBoost algorithm. We fit the model using the training data and backtested its performance. However, the AdaBoost model did not perform as well as the baseline model. The strategy return decreased to 1.3, indicating poorer trading performance compared to the previous models. The PNG image showing the cumulative returns plot for this updated trading algorithm can be found below:
 
-## Conclusion 
-This project is ongoing and the README will be updated with the conclusions once all the tasks are completed.
+![Cumulative Returns Plot 3](./Resources/cumulative_returns_plot3.png)
+
+### 4. Evaluation Report
+
+Based on our analysis, we conclude that the tuned baseline trading algorithm, with the adjusted parameters for the training dataset and SMA input features, offers the best performance for this particular trading scenario. Here are our key findings:
+
+- After tuning the baseline trading algorithm by adjusting the size of the training dataset and the SMA input features, we observed significant improvements in the algorithm's performance. The strategy returns increased from 1.5 to 1.6, and the actual returns increased from 1.4 to 1.5.
+
+- We also evaluated a new machine learning classifier, including AdaBoost, DecisionTreeClassifier, LogisticRegression, and GradientBoostingClassifier. Among these models, the tuned baseline algorithm consistently outperformed the others, demonstrating better trading performance.
+
+- We have included PNG images of the cumulative returns plots for the baseline algorithm, as well as the tuned algorithm with adjusted parameters, in the previous sections. These plots visually depict the performance comparison between different algorithms.
+
+The provided PNG images serve as valuable visual references for comparing the different strategies employed throughout the project.
 
 **Please note**: This project is an academic exercise and is not intended to be a guide for real-world trading. The algorithms and strategies used in this project may not be suitable for actual trading and are not recommended for use in live trading without further enhancements and testing.
 
