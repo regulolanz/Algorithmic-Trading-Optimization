@@ -25,19 +25,19 @@ To enhance the baseline algorithm's performance, the following steps were carrie
 Initially, the ending period for the training data was set with an offset of 3 months and the short and long windows for the SMA were set to 4 and 100 respectively.
 
 ```python```
-# Select the ending period for the training data with an offset of 3 months
+#### Select the ending period for the training data with an offset of 3 months
 training_end = X.index.min() + DateOffset(months=3)
 
-# Set the short window and long window
+#### Set the short window and long window
 short_window = 4
 long_window = 100
 
 After adjustment, the ending period for the training data was set with an offset of 5 months and the short and long windows for the SMA were set to 2 and 60 respectively.
 
-# Select the ending period for the training data with an offset of 5 months
+#### Select the ending period for the training data with an offset of 5 months
 training_end = X.index.min() + DateOffset(months=5)
 
-# Set the short window and long window
+#### Set the short window and long window
 short_window = 2
 long_window = 60
 
